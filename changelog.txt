@@ -1,0 +1,14 @@
+Kreisrechner kompakt
+version 3.1
+
++ added a function, that you can also press enter to calculate the circle.
+
++ added that only the final result will be rounded so that the final result is correcter.
+
++ added darkmode
+
++ added a socials page to give more contact options.
+
++ fixed bug when you're typing an Area to calculate, that the same result of diameter and circumference was shown.
+
+- removed the mention of the "käufmännischem Prinzip".

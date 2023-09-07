@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kreisberechner</title>
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Kreisberechner" />
+    <meta property="og:description" content="Mit diesem Kreisberechner Tool, kann man ganz leicht alle Eigenschaften berechnen." />
+    <meta property="og:image:alt" content="Epische Vectorisierte Darstellung" />
+    <meta property="og:site_name" content="Kreisberechner" />
+    <meta property="profile:username" content="Fabix" />
+    <meta property="profile:gender" content="male" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Umfangs-, Radius-, Durchmesser- und Flächenberechner für Kreise</h1>
+      <h3>
+        <span>By</span>
+        <a href="./socials.html" target="_blank" class="fabix-link">Fabix</a>
+      </h3>
+    </div>
+
+    <div class="eingabe">
+      <h3>Gib einen Umfang, Fläche oder Radius ein:</h3>
+      <input name="wert" class="wert" id="werteingabe" placeholder="Gib einen Wert ein" />
+      <select name="typen" class="typen" id="typen" class="typen">
+        <option value="Radius">Radius</option>
+        <option value="Fläche">Fläche</option>
+        <option value="Umfang">Umfang</option>
+        <option value="Durchmesser">Durchmesser</option>
+      </select>
+
+      <button class="berechnen" id="berechnen">Berechnen</button>
+      <h3>Ergebnisse:</h3>
+      <p>Radius: <span class="ergebnis-radius" id="ergebnis-radius">---</span></p>
+      <p>Fläche: <span id="ergebnis-fläche">---</span></p>
+      <p>Umfang: <span id="ergebnis-umfang">---</span></p>
+      <p>Durchmesser: <span id="ergebnis-durchmesser">---</span></p>
+    </div>
+
+    <div class="hinweis">
+      <h5>Hinweis: Die Ergebnisse sind richtig, wenn man von π = 3.141592654 ausgeht.</h5>
+      <h5>Alle Ergebnisse werden auf zwei nachkommastellen gerundet.</h5>
+    </div>
+
+    <script src="index.js" defer></script>
+  </body>
+</html>

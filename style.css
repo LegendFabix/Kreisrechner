@@ -1,0 +1,140 @@
+:root {
+  /* whitemode */
+  --background-color: white;
+  --font-color: black;
+  --fabix-link-font-color: rgb(236, 92, 92);
+  --fabix-link-font-color-hover: red;
+  --wert-border: 2px solid black;
+  --wert-border-radius: 4px;
+  --wert-background-color-socials: rgb(219,218,220);
+  --wert-background-color-socials-hover: rgb(182, 182, 182);
+}
+
+@media (prefers-color-scheme: dark) {
+  /* darkmode */
+  :root {
+    --background-color: rgb(32, 32, 37);
+    --font-color: white;
+    --fabix-link-font-color: rgb(33, 201, 201);
+    --fabix-link-font-color-hover: cyan;
+    --wert-border: 2px solid white;
+    --wert-border-radius: 4px;
+    --wert-background-color: rgb(32, 32, 37);
+    --wert-background-color-socials: rgb(54, 52, 52);
+    --wert-background-color-socials-hover: rgb(80, 77, 77);
+  }
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+* {
+  font-family: "Kanit", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  color: var(--font-color);
+}
+
+/* Stylesheet zu index.html */
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 2em;
+}
+
+.fabix-link {
+  font-size: 1.17em;
+  font-weight: bold;
+  color: var(--fabix-link-font-color);
+}
+
+.fabix-link:hover {
+  color: var(--fabix-link-font-color-hover);
+  transition: 0.3s;
+}
+
+.eingabe {
+  margin-left: 2em;
+}
+
+.wert {
+  border: var(--wert-border);
+  border-radius: var(--wert-border-radius);
+  background-color: var(--wert-background-color);
+}
+
+.typen {
+  border: var(--wert-border);
+  border-radius: var(--wert-border-radius);
+  background-color: var(--wert-background-color);
+}
+
+.berechnen {
+  border: var(--wert-border);
+  border-radius: var(--wert-border-radius);
+  background-color: var(--wert-background-color);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.hinweis {
+  font-weight: lighter;
+  padding-left: 2em;
+}
+
+/* Stylesheet zu socials.html */
+
+.headline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 2em;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15em;
+  height: 10rem;
+  padding-top: 3em;
+  background-color: var(--wert-background-color-socials);
+  flex-direction: column;
+  border-radius: 1em;
+  text-decoration: none;
+  flex-basis: 40%;
+}
+
+.img {
+  width: 4em;
+  height: 4em;
+  padding-bottom: 1em;
+}
+
+.img-yt {
+  width: 5em;
+  height: 5em;
+  padding-bottom: 1em;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 3em;
+  gap: 2em;
+}
+
+.socials:hover {
+  background-color: var(--wert-background-color-socials-hover);
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
