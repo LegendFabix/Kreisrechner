@@ -64,18 +64,21 @@ body {
   border: var(--wert-border);
   border-radius: var(--wert-border-radius);
   background-color: var(--wert-background-color);
+  margin-top: 0.5em;
 }
 
 .typen {
   border: var(--wert-border);
   border-radius: var(--wert-border-radius);
   background-color: var(--wert-background-color);
+  margin-top: 0.5em;
 }
 
 .berechnen {
   border: var(--wert-border);
   border-radius: var(--wert-border-radius);
   background-color: var(--wert-background-color);
+  margin-top: 0.5em;
 }
 
 .bold {

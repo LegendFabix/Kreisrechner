@@ -5,11 +5,6 @@ let umfang;
 let fläche;
 let durchmesser;
 
-let radiusb;
-let umfangb;
-let flächeb;
-let durchmesserb;
-
 console.log("Was hast du in der Konsole vor? 🤨")
 console.log("Bei Kritik/Bugreporting mich kontaktieren")
 
@@ -22,8 +17,6 @@ document.getElementById("berechnen").addEventListener("click", () => {
     // Umfangsberechnung
     radius = document.getElementById("werteingabe").value;
     umfang = Number(umfang);
-    umfangb = Number(umfangb);
-    umfangb = 2 * PI * radius;
     umfang = Math.round(2 * PI * radius * 100) / 100;
     document.getElementById("ergebnis-umfang").classList.add("bold");
     document.getElementById("ergebnis-umfang").innerHTML = umfang;
@@ -48,7 +41,6 @@ document.getElementById("berechnen").addEventListener("click", () => {
     // Radiusberechnung
     fläche = document.getElementById("werteingabe").value;
     fläche = Number(fläche);
-    radiusb = Math.sqrt(fläche / PI);
     radius = Math.round(Math.sqrt(fläche / PI) * 100) / 100;
     document.getElementById("ergebnis-radius").classList.add("bold");
     document.getElementById("ergebnis-radius").innerHTML = radius;
@@ -58,12 +50,12 @@ document.getElementById("berechnen").addEventListener("click", () => {
     document.getElementById("ergebnis-fläche").innerHTML = fläche;
 
     // Umfangsberechnung
-    umfang = Math.round(2 * PI * radiusb * 100) / 100;
+    umfang = Math.round(2 * PI * radius * 100) / 100;
     document.getElementById("ergebnis-umfang").classList.add("bold");
     document.getElementById("ergebnis-umfang").innerHTML = umfang;
 
     // Durchmesserberechnung
-    durchmesser = Math.round(2 * radiusb * 100) / 100;
+    durchmesser = Math.round(2 * radius * 100) / 100;
     document.getElementById("ergebnis-durchmesser").classList.add("bold");
     document.getElementById("ergebnis-durchmesser").innerHTML = durchmesser;
 
@@ -97,17 +89,16 @@ document.getElementById("berechnen").addEventListener("click", () => {
     durchmesser = document.getElementById("werteingabe").value;
     durchmesser = Number(durchmesser);
     radius = Math.round((durchmesser / 2) * 100) / 100;
-    radiusb = durchmesser / 2;
     document.getElementById("ergebnis-radius").classList.add("bold");
     document.getElementById("ergebnis-radius").innerHTML = radius;
 
     // Flächenberechnung
-    fläche = Math.round(PI * Math.pow(radiusb, 2) * 100) / 100;
+    fläche = Math.round(PI * Math.pow(radius, 2) * 100) / 100;
     document.getElementById("ergebnis-fläche").classList.add("bold");
     document.getElementById("ergebnis-fläche").innerHTML = fläche;
 
     // Umfangberechnung
-    umfang = Math.round(2 * PI * radiusb * 100) / 100;
+    umfang = Math.round(2 * PI * radius * 100) / 100;
     document.getElementById("ergebnis-umfang").classList.add("bold");
     document.getElementById("ergebnis-umfang").innerHTML = umfang;
 
