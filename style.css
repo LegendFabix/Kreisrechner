@@ -112,6 +112,7 @@ body {
   border-radius: 1em;
   text-decoration: none;
   flex-basis: 40%;
+  transition: all 0.3s ease-in-out;
 }
 
 .img {
@@ -138,6 +139,4 @@ body {
 
 .socials:hover {
   background-color: var(--wert-background-color-socials-hover);
-  transition-duration: 0.3s;
-  transition-timing-function: ease;
 }
